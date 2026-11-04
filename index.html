@@ -7,9 +7,10 @@ body{margin:0;background:#26446b;color:#c5d3e6;font-family:"Meiryo","Yu Gothic U
 .wrap{max-width:1100px;margin:0 auto;padding:24px 20px 48px}
 .cards{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
 .card{background:#f1f5fa;border:1px solid #d3dce6;border-radius:8px;color:#14284a}
-.sum{flex:1 1 180px;padding:16px 20px;border-top:5px solid #7f8da3}
+.sum{flex:1 1 180px;padding:16px 20px;border-top:5px solid #7f8da3;text-align:center}
 .sum .n{font-size:38px;font-weight:700;line-height:1.1}
-.sum .l{font-size:13px;color:#4a5c75}
+.sum .l{font-size:14px;font-weight:700;color:#4a5c75}
+.sum .n small{font-size:16px;font-weight:700;margin-left:3px}
 .sum.e{border-top-color:#c8102e}.sum.e .n{color:#c8102e}
 .sum.w{border-top-color:#e08e0b}.sum.w .n{color:#c27800}
 .sum.o{border-top-color:#1f9d62}.sum.o .n{color:#1f9d62}
@@ -33,8 +34,17 @@ h2{color:#fff;font-size:16px;margin:26px 0 10px;border-left:4px solid #c8102e;pa
 .iss .m{flex:1}
 .okbox{padding:14px 18px;font-size:14px}
 .okbox span{display:inline-block;background:#e3eaf3;border-radius:4px;padding:1px 9px;margin:3px 4px 3px 0;font-size:13px}
+.st{padding:10px 16px;border-bottom:1px solid #d3dce6}
+.st:last-child{border-bottom:0}
+.st .nm{font-size:14px;font-weight:700;color:#14284a}
+.st .nm b{font-size:18px;color:#c8102e;margin-left:8px}
+.st .ns{margin-top:4px}
+.st .ns span{display:inline-block;background:#e3eaf3;border-radius:4px;padding:1px 9px;margin:3px 4px 3px 0;font-size:13px}
+.st .ns span.e{background:#c8102e;color:#fff}
+.st .ns span.w{background:#e08e0b;color:#fff}
+.lg{font-size:12px;color:#c5d3e6;margin:0 0 8px}
 .note{font-size:12px;color:#c5d3e6;margin-top:30px}
-</style></head><body><div class='hd'><h1>補償請求 送信前チェック結果</h1><p>対象ファイル: サ＿補償請求マスターＦ.csv ／ 送信予定日: 2026/11/04 ／ 作成: 2026/11/04 11:45</p></div><div class='wrap'><div class='cards'><div class='card sum t'><div class='n'>8</div><div class='l'>送信対象(D列=[A])</div></div><div class='card sum e'><div class='n'>0</div><div class='l'>エラーあり(送信前に修正)</div></div><div class='card sum w'><div class='n'>0</div><div class='l'>要確認のみ(目視で確認)</div></div><div class='card sum o'><div class='n'>8</div><div class='l'>問題なし</div></div></div><div class='card okbox'>指摘はありません。送信前チェックを通過しました。</div><h2>問題なしの行</h2><div class='card okbox'><span>1K029</span><span>1L001</span><span>2X024</span><span>AL001</span><span>AX021</span><span>6K008</span><span>HL001</span><span>7L001</span></div><div class='note'>ルールデータ: 2026-11-02作成 ／ 比較用の送信済み 960件 ／ [エラー]=不承認になる可能性が高い、[要確認]=目視で確認</div></div><script>
+</style></head><body><div class='hd'><h1>補償請求 送信前チェック結果</h1><p>対象ファイル: サ＿補償請求マスターＦ.csv ／ 送信予定日: 2026/11/04 ／ 作成: 2026/11/04 18:22</p></div><div class='wrap'><div class='cards'><div class='card sum t'><div class='n'>8<small>件</small></div><div class='l'>補償請求送信前</div></div><div class='card sum e'><div class='n'>0<small>件</small></div><div class='l'>エラーになる可能性 大</div></div><div class='card sum w'><div class='n'>0<small>件</small></div><div class='l'>エラーになる可能性 小</div></div><div class='card sum o'><div class='n'>8<small>件</small></div><div class='l'>Check OK 問題なし</div></div></div><div class='card okbox'>指摘はありません。送信前チェックを通過しました。</div><h2>補償請求送信前リスト</h2><div class='lg'>店舗(拠点)別の件数と補償請求番号です。赤=エラーあり、橙=要確認あり、色なし=問題なし</div><div class='card'><div class='st'><div class='nm'>石川店(拠点 10)<b>2件</b></div><div class='ns'><span>1K029</span><span>1L001</span></div></div><div class='st'><div class='nm'>亀本店(拠点 20)<b>1件</b></div><div class='ns'><span>2X024</span></div></div><div class='st'><div class='nm'>神山店(拠点 52)<b>2件</b></div><div class='ns'><span>AL001</span><span>AX021</span></div></div><div class='st'><div class='nm'>森　山(拠点 60)<b>1件</b></div><div class='ns'><span>6K008</span></div></div><div class='st'><div class='nm'>北桧山(拠点 64)<b>1件</b></div><div class='ns'><span>HL001</span></div></div><div class='st'><div class='nm'>江差店(拠点 70)<b>1件</b></div><div class='ns'><span>7L001</span></div></div><div class='st'><div class='nm'>合計<b>8件</b></div></div></div><div class='note'>ルールデータ: 2026-11-02作成 ／ 比較用の送信済み 960件 ／ [エラー]=不承認になる可能性が高い、[要確認]=目視で確認</div></div><script>
 var bs=document.querySelectorAll('.bar button');
 bs.forEach(function(b){b.onclick=function(){
  bs.forEach(function(x){x.classList.remove('on')});b.classList.add('on');
