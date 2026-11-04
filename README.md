@@ -1,1 +1,1 @@
-# hosyo-check-hk
+# hosho-check-hk
